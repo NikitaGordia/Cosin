@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@color/back"
+        android:gravity="center_horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.CardView
+            android:background="@color/back"
+            android:layout_weight="0"
+            card_view:cardCornerRadius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.nikitagordia.cosin.Cosin
+                android:id="@+id/cosin"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:layout_width="170dp"
+                android:layout_height="130dp" />
+
+        </android.support.v7.widget.CardView>
+
+        <ScrollView
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_margin="7dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:text="Data is loading :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/is_loading"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <View
+                            android:background="@android:color/darker_gray"
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"/>
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:text="Direction is right :"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <CheckBox
+                            android:id="@+id/dir"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:text="Rect width :"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tv_rect_width"
+                                android:text="10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/rect_width"
+                            android:progress="10"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:text="View width :"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tv_view_width"
+                                android:text="10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/view_width"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:progress="34" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:text="View height :"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tv_view_height"
+                                android:text="10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/view_height"
+                            android:progress="34"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioGroup
+                            android:id="@+id/period"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:text="PI / 2"
+                                android:id="@+id/p0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:text="PI"
+                                android:id="@+id/p1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:text="2 * PI"
+                                android:id="@+id/p2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:text="5 * PI"
+                                android:id="@+id/p3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:text="10 * PI"
+                                android:id="@+id/p4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:text="Speed :"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tv_speed"
+                                android:text="10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/speed"
+                            android:progress="34"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:text="Color adapter :"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+                        <RadioGroup
+                            android:id="@+id/color_adapter"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/gb"
+                                android:text="Color adapter Green - Blue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/bg"
+                                android:text="Color adapter Blue - Green"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/rg"
+                                android:text="Color adapter Red - Green"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/gr"
+                                android:text="Color adapter Green - Red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/br"
+                                android:text="Color adapter Blue - Red"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:id="@+id/rb"
+                                android:text="Color adapter Red - Blue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:text="Offset :"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/tv_offset"
+                                android:text="10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+
+                        <SeekBar
+                            android:id="@+id/offset"
+                            android:progress="34"
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    card_view:cardCornerRadius="5dp"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:textStyle="bold"
+                            android:text="TextAdapter :"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <RadioGroup
+                            android:id="@+id/rect_text"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:text="Binary"
+                                android:id="@+id/binary"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <RadioButton
+                                android:text="Text"
+                                android:id="@+id/rb_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                        </RadioGroup>
+
+                        <EditText
+                            android:id="@+id/et_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
