@@ -489,6 +489,12 @@
 
                 </android.support.v7.widget.CardView>
 
+                <Button
+                    android:id="@+id/stop"
+                    android:text="STOP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
             </LinearLayout>
 
         </ScrollView>

@@ -16,7 +16,7 @@ public class ColorAdapterBR implements Cosin.ColorAdapter {
     }
 
     @Override
-    public int calcColor(int numOfRect, double percentOfHeght) {
-        return Color.argb(150, (int)(255 * (1d - percentOfHeght)), 0, (int)(255 * percentOfHeght));
+    public int calcColor(int numOfRect, double percentOfHeight) {
+        return Color.argb(150, (int)(255 * (1d - percentOfHeight)), 0, (int)(255 * percentOfHeight));
     }
 }

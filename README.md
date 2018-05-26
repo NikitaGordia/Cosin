@@ -31,7 +31,7 @@ allprojects {
 
 build.gradle (Module)
 ```groovy
-implementation 'com.github.NikitaGordia:Cosin:1.0.0'
+implementation 'com.github.NikitaGordia:Cosin:1.1.0'
 ```
 
 # Quick start guide
@@ -50,12 +50,13 @@ implementation 'com.github.NikitaGordia:Cosin:1.0.0'
 | --------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | speed     							| Angle speed		  																						|
 | isLoading    							| If 'true' shows symbols on rectangle		  																|
+| setEnd    							| Shows end animation (optionally you may pass onEnd(OnEnd))
 | rectWidth    							| Width each of rectangle 					  																|
 | period    							| Determine period of cosinusoidal function																	|
 | colorAdapter    						| Define color changes by two parameters (position count, height percent) for each rectagle					|
 | offset    							| Moving bottom offset																						|
 | directionRight    					| Determine movement side																					|
-| textAdapter    						| Define text changes by position count for each rectagle													|
+| textAdapter    						| Define text changes by position count for each rectangle													|
 
 ## There are 6 default ColorAdapter implementation in box :
 
@@ -84,8 +85,8 @@ public class ColorAdapterBR implements Cosin.ColorAdapter {
     }
 
     @Override
-    public int calcColor(int numOfRect, double percentOfHeght) {
-        return Color.argb(150, (int)(255 * (1d - percentOfHeght)), 0, (int)(255 * percentOfHeght));
+    public int calcColor(int numOfRect, double percentOfHeight) {
+        return Color.argb(150, (int)(255 * (1d - percentOfHeight)), 0, (int)(255 * percentOfHeight));
     }
 }
 ```

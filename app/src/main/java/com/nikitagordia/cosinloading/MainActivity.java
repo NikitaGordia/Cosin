@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
@@ -228,6 +229,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 bind.cosin.setDirectionRight(isChecked);
+            }
+        });
+
+        bind.stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                bind.cosin.setEnd();
             }
         });
     }
